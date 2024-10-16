@@ -1,7 +1,7 @@
 {
   "root": true,
-  "ignorePatterns": ["**/*"],
   "plugins": ["@nx"],
+  "extends": ["./.eslint.ronasit.js"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -13,8 +13,32 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "app:shared",
+                "onlyDependOnLibsWithTags": ["app:shared"]
+              },
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:*"]
+              },
+              {
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": ["type:features", "type:ui", "type:utils", "type:data-access"]
+              },
+              {
+                "sourceTag": "type:utils",
+                "onlyDependOnLibsWithTags": ["type:utils"]
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:data-access", "type:utils"]
+              },
+              {
+                "sourceTag": "type:features",
+                "onlyDependOnLibsWithTags": ["type:features", "type:data-access", "type:ui", "type:utils"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:ui", "type:utils"]
               }
             ]
           }
@@ -29,13 +53,6 @@
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nx/javascript"],
-      "rules": {}
-    },
-    {
-      "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
-      "env": {
-        "jest": true
-      },
       "rules": {}
     }
   ]
