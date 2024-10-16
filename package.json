@@ -14,6 +14,8 @@
     "@expo/metro-runtime": "~3.2.1",
     "@tamagui/config": "^1.115.4",
     "@tamagui/core": "^1.115.4",
+    "@tamagui/next-plugin": "^1.115.4",
+    "@tamagui/next-theme": "^1.115.4",
     "expo": "~51.0.8",
     "expo-splash-screen": "~0.27.4",
     "expo-status-bar": "~1.12.1",
