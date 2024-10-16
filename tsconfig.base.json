@@ -23,7 +23,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-project/mobile/shared/utils/app-env": ["libs/mobile/shared/utils/app-env/src/index.ts"]
+      "@my-project/mobile/shared/utils/app-env": ["libs/mobile/shared/utils/app-env/src/index.ts"],
+      "@my-project/shared/ui/ui-kit": ["libs/shared/ui/ui-kit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
