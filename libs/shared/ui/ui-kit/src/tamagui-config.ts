@@ -60,25 +60,6 @@ const zonaProRegular = createFont({
     extraSmall: 11,
     extraSmallMobile: 10,
   },
-  lineHeight: {
-    $1: 50.6,
-    $2: 32.2,
-    $3: 26.4,
-    $4: 25,
-    $5: 22.5,
-    default: 24,
-    small: 19.5,
-    extraSmall: 17,
-  },
-  weight: {
-    1: '400',
-  },
-  letterSpacing: {
-    1: 0,
-    2: -1,
-    // 3 will be -1
-  },
-  // (native only) swaps out fonts by face/style
 });
 
 const lightTheme = {
@@ -148,9 +129,6 @@ export const tamaguiConfig = createTamagui({
       stiffness: 60,
     },
   }),
-  settings: {
-    disableSSR: true,
-  },
 });
 
 type Conf = typeof tamaguiConfig;

@@ -11,18 +11,18 @@ export const AppTextField = styled(Input, {
   backgroundColor: '$backgroundSecondary',
   borderRadius: 8,
   fontFamily: '$regular',
+  borderWidth: 1,
+  borderColor: 'transparent',
   fontSize: '$default',
   width: '100%',
   color: '$textPrimary',
   focusStyle: {
-    borderWidth: 1,
     borderColor: '$brandPrimary',
     backgroundColor: '$backgroundPrimary',
   },
   variants: {
     isError: {
       true: {
-        borderWidth: 1,
         borderColor: '$danger',
         backgroundColor: '$backgroundPrimary',
       },

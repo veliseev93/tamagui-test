@@ -1,7 +1,7 @@
 'use client';
 
-import React, { ReactElement, useState } from 'react';
-import { Switch, styled } from 'tamagui';
+import React, { ReactElement } from 'react';
+import { Switch, styled, SwitchProps } from 'tamagui';
 
 const CustomSwitch = styled(Switch, {
   backgroundColor: '$textSecondary',
@@ -18,11 +18,9 @@ const CustomSwitch = styled(Switch, {
   },
 });
 
-export function AppSwitch(): ReactElement {
-  const [checked, setChecked] = useState(false);
-
+export function AppSwitch(props: SwitchProps): ReactElement {
   return (
-    <CustomSwitch onCheckedChange={(checked: boolean) => setChecked(checked)} checked={checked}>
+    <CustomSwitch {...props}>
       <Switch.Thumb width={24} height={24} backgroundColor='$textForeground' animation='quicker' />
     </CustomSwitch>
   );
