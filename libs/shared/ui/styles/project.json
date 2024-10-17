@@ -1,0 +1,9 @@
+{
+  "name": "shared-ui-styles",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/ui/styles/src",
+  "projectType": "library",
+  "tags": ["app:shared", "scope:shared", "type:ui"],
+  "// targets": "to see all targets run: nx show project shared-ui-styles --web",
+  "targets": {}
+}

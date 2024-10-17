@@ -10,7 +10,8 @@ export default function Index() {
    */
   return (
     <div>
-      <H1>asdasdasd</H1>
+      <H1 fontFamily='ZonaPro Bold'>asdasdasd</H1>
+      <p style={{ fontFamily: 'ZonaPro Bold' }}>asdasdasd</p>
     </div>
   );
 }

@@ -1,6 +1,8 @@
 // eslint-disable-next-line @nx/enforce-module-boundaries, import/no-unresolved
+import '@my-project/shared/ui/styles/global';
+
+// eslint-disable-next-line @nx/enforce-module-boundaries, import/no-unresolved
 import { NextTamaguiProvider } from '@my-project/shared/ui/ui-kit';
-import './global.css';
 
 export const metadata = {
   title: 'Welcome to web',
