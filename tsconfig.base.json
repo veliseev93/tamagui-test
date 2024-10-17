@@ -23,13 +23,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@my-project/mobile/shared/features/use-load-resources": [
+        "libs/mobile/shared/features/use-load-resources/src/index.ts"
+      ],
       "@my-project/mobile/shared/utils/app-env": ["libs/mobile/shared/utils/app-env/src/index.ts"],
       "@my-project/shared/ui/assets": ["libs/shared/ui/assets/src/index.ts"],
-      "@my-project/shared/ui/styles": ["libs/shared/ui/styles/src/*"],
-      "@my-project/shared/ui/styles/global": ["libs/shared/ui/styles/src/global.scss"],
-      "@my-project/shared/ui/ui-kit": ["libs/shared/ui/ui-kit/src/index.ts"],
       "@my-project/shared/ui/assets/fonts/*": ["libs/shared/ui/assets/src/fonts/*"],
-      "@my-project/shared/ui/styles/fonts": ["libs/shared/ui/styles/src/_fonts.scss"]
+      "@my-project/shared/ui/styles": ["libs/shared/ui/styles/src/index.ts"],
+      "@my-project/shared/ui/styles/fonts": ["libs/shared/ui/styles/src/_fonts.scss"],
+      "@my-project/shared/ui/styles/global": ["libs/shared/ui/styles/src/global.scss"],
+      "@my-project/shared/ui/ui-kit": ["libs/shared/ui/ui-kit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

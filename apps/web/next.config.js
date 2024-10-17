@@ -24,7 +24,6 @@ const tamaguiPlugin = withTamagui({
 const plugins = [
   // Add more Next.js plugins to this list if needed.
   withNx,
-  tamaguiPlugin,
 ];
 
-module.exports = composePlugins(...plugins)(nextConfig);
+module.exports = composePlugins(...plugins)({ ...nextConfig, ...tamaguiPlugin(nextConfig) });

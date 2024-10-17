@@ -7,8 +7,8 @@ import { NextThemeProvider } from '@tamagui/next-theme';
 import { useServerInsertedHTML } from 'next/navigation';
 import React, { ReactNode } from 'react';
 import { StyleSheet } from 'react-native';
-import { TamaguiProvider } from 'tamagui';
-import { appConfig } from '../tamagui-config';
+import { TamaguiProvider, Theme } from 'tamagui';
+import { tamaguiConfig } from '../tamagui-config';
 
 export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {
   useServerInsertedHTML(() => {
@@ -23,7 +23,7 @@ export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {
           dangerouslySetInnerHTML={{
             // the first time this runs you'll get the full CSS including all themes
             // after that, it will only return CSS generated since the last call
-            __html: appConfig.getNewCSS(),
+            __html: tamaguiConfig.getNewCSS(),
           }}
         />
       </React.Fragment>
@@ -32,8 +32,8 @@ export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {
 
   return (
     <NextThemeProvider skipNextHead>
-      <TamaguiProvider config={appConfig} disableRootThemeClass>
-        {children}
+      <TamaguiProvider config={tamaguiConfig} disableRootThemeClass defaultTheme='light'>
+        <Theme name='light'>{children}</Theme>
       </TamaguiProvider>
     </NextThemeProvider>
   );
