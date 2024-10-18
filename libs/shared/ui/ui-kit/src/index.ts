@@ -7,3 +7,4 @@ export * from './text';
 export * from './text-field';
 export * from './accordion';
 export * from './layout';
+export * from './checkbox';

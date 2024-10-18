@@ -9,6 +9,7 @@ import {
   H1,
   tamaguiConfig,
   AppLayout,
+  AppCheckBox,
 } from '@my-project/shared/ui/ui-kit';
 import { TamaguiProvider, Theme } from '@tamagui/core';
 import React, { useState } from 'react';
@@ -44,6 +45,7 @@ export const App = () => {
             <AppSwitch onCheckedChange={(value) => setTheme(value ? 'light' : 'dark')} checked={theme === 'light'} />
             <AppTextField />
             <AppAccordion />
+            <AppCheckBox />
           </View>
         </AppLayout>
       </Theme>

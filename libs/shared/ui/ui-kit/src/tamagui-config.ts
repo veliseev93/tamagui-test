@@ -5,37 +5,51 @@ import { config as defaultConfig } from '@tamagui/config/v3';
 import { createTamagui } from '@tamagui/core';
 import { createFont } from 'tamagui';
 
+const fontSizes = {
+  h1: 44,
+  h1Mobile: 32,
+  h2: 28,
+  h2Mobile: 26,
+  h3: 22,
+  h3Mobile: 18,
+  h4: 20,
+  h4Mobile: 18,
+  h5: 18,
+  h5Mobile: 17,
+  default: 16,
+  defaultMobile: 14,
+  small: 13,
+  smallMobile: 12,
+  extraSmall: 11,
+  extraSmallMobile: 10,
+};
+
+const lineHeights = {
+  h1: 50.6,
+  h1Mobile: 36.8,
+  h2: 32.2,
+  h2Mobile: 29.9,
+  h3: 26.4,
+  h3Mobile: 21.6,
+  h4: 25,
+  h4Mobile: 20.7,
+  h5: 22.5,
+  h5Mobile: 22.5,
+  default: 24,
+  defaultMobile: 21,
+  small: 19.5,
+  smallMobile: 18,
+  extraSmall: 17,
+  extraSmallMobile: 15.5,
+};
+
 const zonaProBold = createFont({
   family: 'ZonaPro Bold',
   size: {
     ...defaultConfig.fonts.body.size,
-    h1: 44,
-    h1Mobile: 32,
-    $2: 28,
-    $2Mobile: 26,
-    $3: 22,
-    $3Mobile: 18,
-    $4: 20,
-    $4Mobile: 18,
-    $5: 18,
-    $5Mobile: 17,
-    default: 16,
-    defaultMobile: 14,
-    small: 13,
-    smallMobile: 12,
-    extraSmall: 11,
-    extraSmallMobile: 10,
+    ...fontSizes,
   },
-  lineHeight: {
-    h1: 50.6,
-    $2: 32.2,
-    $3: 26.4,
-    $4: 25,
-    $5: 22.5,
-    default: 24,
-    small: 19.5,
-    extraSmall: 17,
-  },
+  lineHeight: lineHeights,
   weight: {
     1: '700',
   },
@@ -51,15 +65,9 @@ const zonaProRegular = createFont({
   family: 'ZonaPro Regular',
   size: {
     ...defaultConfig.fonts.body.size,
-    $5: 18,
-    $5Mobile: 17,
-    default: 16,
-    defaultMobile: 14,
-    small: 13,
-    smallMobile: 12,
-    extraSmall: 11,
-    extraSmallMobile: 10,
+    ...fontSizes,
   },
+  lineHeight: lineHeights,
 });
 
 const lightTheme = {

@@ -3,7 +3,15 @@
 
 import { useState } from 'react';
 import { Theme } from 'tamagui';
-import { AppAccordion, AppButton, AppLayout, AppSwitch, AppTextField, H1 } from '@my-project/shared/ui/ui-kit';
+import {
+  AppAccordion,
+  AppButton,
+  AppCheckBox,
+  AppLayout,
+  AppSwitch,
+  AppTextField,
+  H1,
+} from '@my-project/shared/ui/ui-kit';
 
 export default function Index() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -27,6 +35,7 @@ export default function Index() {
           <AppSwitch onCheckedChange={(value) => setTheme(value ? 'light' : 'dark')} checked={theme === 'light'} />
           <AppTextField />
           <AppAccordion />
+          <AppCheckBox />
         </div>
       </AppLayout>
     </Theme>

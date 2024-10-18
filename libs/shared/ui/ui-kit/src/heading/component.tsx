@@ -7,11 +7,11 @@ export const H1 = styled(TamaguiH1, {
   fontFamily: '$bold',
   color: '$textPrimary',
   unstyled: true,
-  fontSize: 44,
-  lineHeight: 50.6,
+  size: '$h1',
+  lineHeight: '$h1',
   $mobile: {
-    fontSize: 32,
-    lineHeight: 36.8,
+    size: '$h1Mobile',
+    lineHeight: '$h1Mobile',
   },
 });
 
@@ -20,11 +20,11 @@ export const H2 = styled(TamaguiH2, {
   fontFamily: '$bold',
   color: '$textPrimary',
   unstyled: true,
-  lineHeight: 32.2,
-  fontSize: 28,
+  lineHeight: '$h2',
+  size: '$h2',
   $mobile: {
-    fontSize: 26,
-    lineHeight: 29.9,
+    size: '$h2Mobile',
+    lineHeight: '$h2Mobile',
   },
 });
 
@@ -33,11 +33,11 @@ export const H3 = styled(TamaguiH3, {
   fontFamily: '$bold',
   color: '$textPrimary',
   unstyled: true,
-  lineHeight: 26.4,
-  fontSize: 22,
+  lineHeight: '$h3',
+  size: '$h3',
   $mobile: {
-    fontSize: 18,
-    lineHeight: 21.6,
+    size: '$h3Mobile',
+    lineHeight: '$h3Mobile',
   },
 });
 
@@ -46,11 +46,11 @@ export const H4 = styled(TamaguiH4, {
   fontFamily: '$bold',
   color: '$textPrimary',
   unstyled: true,
-  lineHeight: 25,
-  fontSize: 20,
+  lineHeight: '$h4',
+  size: '$h4',
   $mobile: {
-    fontSize: 18,
-    lineHeight: 20.7,
+    fontSize: '$h4Mobile',
+    lineHeight: '$h4Mobile',
   },
 });
 
@@ -59,10 +59,10 @@ export const H5 = styled(TamaguiH5, {
   fontFamily: '$bold',
   color: '$textPrimary',
   unstyled: true,
-  lineHeight: 22.5,
-  fontSize: 18,
+  lineHeight: '$h5',
+  fontSize: '$h5',
   $mobile: {
-    fontSize: 17,
-    lineHeight: 21.25,
+    size: '$h5Mobile',
+    lineHeight: '$h5Mobile',
   },
 });
